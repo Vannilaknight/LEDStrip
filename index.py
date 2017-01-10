@@ -7,6 +7,10 @@ BLUE = 24
 
 pi = pigpio.pi()
 
+pi.set_PWM_dutycycle(RED, 0)
+pi.set_PWM_dutycycle(GREEN, 0)
+pi.set_PWM_dutycycle(BLUE, 0)
+
 def LightUp(color, num):
     if num == 255:
         return
