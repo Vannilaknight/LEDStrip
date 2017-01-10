@@ -16,7 +16,7 @@ def LightUp(color, num):
         return
     else:
         print(num)
-        time.sleep(1)
+        time.sleep(.2)
         pi.set_PWM_dutycycle(color, num)
         LightUp(color, num + 1)
 
