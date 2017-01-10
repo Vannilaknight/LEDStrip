@@ -26,10 +26,10 @@ def LightDown(color, num):
         LightDown(color, num - 1)
 
 def LightUp(num):
-    if num == 128:
+    if num == totalTime:
         return
     else:
-        num += .5
+        num += 1
         time.sleep(num)
         interpolate(color1, color2, num/totalTime)
         LightUp(num)
