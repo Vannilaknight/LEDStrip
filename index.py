@@ -30,11 +30,12 @@ def LightUp(num):
         return
     else:
         num += 1
-        time.sleep(num)
+        time.sleep(1)
         interpolate(color1, color2, num/totalTime)
         LightUp(num)
 
 def interpolate(color1, color2, t):
+    print("polating")
     r = color1[0] + (color2[0]- color1[0]) * t
     g = color1[1]+ (color2[1]- color1[1]) * t
     b = color1[2] + (color2[2]- color1[2]) * t
