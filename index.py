@@ -20,7 +20,7 @@ def LightDown(color, num):
         LightDown(color, num - 1)
 
 def LightUp(color, num):
-    if num == 255:
+    if num == 128:
         LightDown(color, num)
     else:
         time.sleep(.1)
