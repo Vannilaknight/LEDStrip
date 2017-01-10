@@ -8,8 +8,8 @@ BLUE = 24
 totalTime = 10
 currentTime = 0
 
-color1 = [255,0,204]
-color2 = [51,204,205]
+color1 = [127,0,102]
+color2 = [25,102,103]
 
 pi = pigpio.pi()
 
