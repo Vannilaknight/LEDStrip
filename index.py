@@ -29,7 +29,7 @@ def LightUp(num):
     if num == 128:
         return
     else:
-        num += .1
+        num += .5
         time.sleep(num)
         interpolate(color1, color2, num/totalTime)
         LightUp(num)
