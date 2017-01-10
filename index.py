@@ -13,7 +13,8 @@ def LightUp(color, num):
     else:
         print(num)
         time.sleep(1)
-        pi.set_PWM_dutycycle(color, num + 1)
+        pi.set_PWM_dutycycle(color, num)
+        LightUp(color, num + 1)
 
 LightUp(RED, 0)
 pi.stop()
