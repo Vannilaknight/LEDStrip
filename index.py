@@ -15,6 +15,7 @@ def LightDown(color, num):
     if num == 0:
        LightUp(color, num)
     else:
+        time.sleep(.1)
         pi.set_PWM_dutycycle(color, num)
         LightDown(color, num - 1)
 
@@ -22,6 +23,7 @@ def LightUp(color, num):
     if num == 255:
         LightDown(color, num)
     else:
+        time.sleep(.1)
         pi.set_PWM_dutycycle(color, num)
         LightUp(color, num + 1)
 
